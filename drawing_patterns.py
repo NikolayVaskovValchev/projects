@@ -18,8 +18,11 @@ choice = int(input("Enter the number corresponding to your choice: "))
 # Taking the dimensions by the choice of the user
 if choice in [1, 3, 4, 6, 7]:  # Patterns that need the number of rows
     rows = int(input("Enter the number of rows: "))
-elif choice in [2, 5, 8]:  # Patterns that need size
+elif choice in [2, 5]:  # Patterns that need size
     size = int(input("Enter the size of the square/rectangle: "))
+elif choice in 8:
+    width = int(input("Enter the width of the rectangle: "))
+    height = int(input("Enter the height of the rectangle: "))
 
 # ---- PATTERNS ----
 
@@ -83,10 +86,7 @@ elif choice == 7:
 
 #CHOICE 8 --> RECTANGLE WITH A HOLLOW CENTER
 elif choice == 8:
-    # TODO: Handle separate width and height inputs for rectangle
-    width = int(input("Enter the width of the rectangle: "))
-    height = int(input("Enter the height of the rectangle: "))
-    pass
+    
 
 else:
     print("❌ Invalid choice! Please restart the program.")
